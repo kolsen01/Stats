@@ -11,4 +11,4 @@
 ### Gaussian Distribution:
 	* f(k;np) = (e^(-(k-np)^2/2np))/sqrt(2(pi)np)
 
-## See .jpg for image of graphs
+#### See .jpg for image of graphs
