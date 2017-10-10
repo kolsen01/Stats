@@ -11,3 +11,4 @@
 ### Gaussian Distribution:
 	* f(k;np) = (e^(-(k-np)^2/2np))/sqrt(2(pi)np)
 
+![Alt text](/Desktop/kolsen01/Stats/distribution_curves/binomial_poisson_gaussian.jpg?raw=true "Distribution Curve Graph")
