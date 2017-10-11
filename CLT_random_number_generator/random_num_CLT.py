@@ -8,7 +8,7 @@ def Chi(N):
 		z = x_i **2
 		random_list_i.append(x_i)
 		chi = sum(random_list_i) / N 
-		return chi
+	return chi
 
 		#z = (x_i)**2
 		#random_list_sq.append(z)
@@ -17,7 +17,7 @@ def Chi(N):
 
 histogram = []
 for j in range(0,10000):
-	x_j = Chi(2)
+	x_j = Chi(1)
 	histogram.append(x_j)		
 
 
@@ -28,9 +28,9 @@ for j in range(0,10000):
 
 
 plt.hist(histogram, bins = None, facecolor = 'g')
-plt.title('Random Variables: 2')
+plt.title('Random Variables: 1')
 plt.xlabel('Average of Random Numbers')
 plt.ylabel('Frequency')
-plt.axis([0, 1, 0, 10000])
+plt.grid(True)
 
 plt.show()
