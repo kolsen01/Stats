@@ -3,38 +3,45 @@ import numpy as np
 import scipy, math
 import matplotlib.pyplot as plt
 import pylab 
+import plotly.plotly as py
+import plotly.graph_objs as go
 
 random_list_i = []
-random_list_j = []
+histogram = []
 #random_list_sq = []
 
 def Chi(N):
-	for i in range(0,N):
-		x_i = random.random()
-		x_j = random.random()
-		random_list_i.append(x_i)
-		random_list_j.append(x_j)
-		chi = (sum(random_list_i) + sum(random_list_j))/N 
+	counter = 0
+	while counter < 1000 :
+		counter += 1
+		for i in range(0,N):
+			x_i = random.random()
+			random_list_i.append(x_i)
+			chi = (sum(random_list_i))/N 
+			histogram.append(chi)
 
 		#z = (x_i)**2
 		#random_list_sq.append(z)
 		#chi_sq = sum(random_list_sq)/N
 		#return chi, chi_sq
-		return chi
+		return histogram
 
-N2a, N2b = Chi(3)
-N3a, N3b = Chi(4)
-N4a, N4b = Chi(6)
-N10a, N10b = Chi(11)
+N2a = Chi(2)
+N3a = Chi(3)
+N4a= Chi(4)
+N10a = Chi(10)
 
-print (N2a,N2b,N3a,N3b,N4a,N4b,N10a,N10b)
+print (N2a)
 
 #x_exp = N2a +N3a +N4a + N10a
 #x_exp_sq = N2b + N3b + N4b + N10b 
 
-var_x =x_exp+ x_exp_sq
-print (var_x)
+#var_x =x_exp+ x_exp_sq
+#print (var_x)
+#data = [go.Histogram(x=N2a)]
+#py.iplot(data, filename='basic histogram')
 
-plt.plot([2,3,4,10], [N2b,N3b,N4b,N10b], marker = 'o')
+
+plt.hist(N2a)
 #plt.plot(var_x)
 plt.show()
