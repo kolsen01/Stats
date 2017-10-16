@@ -14,12 +14,12 @@ def f(k,n,p):
 	return f
 
 b_vals1 = []
-for i in range(0,6): 
+for i in range(0,10): 
 	binomial = f(i,100,0.5)
 	b_vals1.append(binomial)
 
 b_vals2 = []	
-for i in range(0,11): 
+for i in range(0,10): 
 	binomial = f(i,1000,0.5)
 	b_vals2.append(binomial)	
 
@@ -32,12 +32,12 @@ def po(k,n,p):
 	return po
 
 p_vals1 = []
-for i in range(0,6): 
+for i in range(0,10): 
 	poisson = po(i,100,0.5)
 	p_vals1.append(poisson)
 
 p_vals2 = []	
-for i in range(0,11): 
+for i in range(0,10): 
 	poisson = po(i,1000,0.5)
 	p_vals2.append(poisson)	
 
@@ -50,12 +50,12 @@ def ga(k,n,p):
 	return ga	
 
 g_vals1 = []
-for i in range(0,6): 
+for i in range(0,10): 
 	gaussian = ga(i,100,0.5)
 	g_vals1.append(gaussian)
 
 g_vals2 = []	
-for i in range(0,11): 
+for i in range(0,10): 
 	gaussian = ga(i,1000,0.5)
 	g_vals2.append(gaussian)
 
@@ -77,7 +77,7 @@ plt.xlabel('k')
 
 pylab.legend(loc='upper right')
 plt.title('Binomial v. Poisson v. Gaussian')
-plt.axis([0,70,0,.33])
+plt.axis([0,1,0,.22])
 
 plt.show()
 
