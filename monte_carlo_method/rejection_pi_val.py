@@ -1,3 +1,6 @@
+# calculates the value of pi using the accept_reject method
+# Using the area of a square with the area of a disk inscribed in a square
+
 import random
 import math
 
