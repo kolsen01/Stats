@@ -1,9 +1,10 @@
 # calculates the vratio of the volume of N-sphere inscribed into a unit N-cube to the volume of N-cube
 # uses rejection method of monte carlo
+# work in progress
 
 import random
 import math
-import numpy as np
+import matplotlib.pyplot as plt
 
 def ratio(N):
 	random_list = []
@@ -32,9 +33,12 @@ def ratio(N):
 	return list_ratios
 
 list = []
-for j in range(0,10):
-	N2 = ratio(3)
+for j in range(0,100):
+	N2 = ratio(2)
 	list.append(N2)		
 
 print (list)
+plt.hist(list, facecolor = 'g')
 
+
+plt.show()
