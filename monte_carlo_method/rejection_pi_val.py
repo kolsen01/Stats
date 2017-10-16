@@ -16,4 +16,5 @@ for i in range(0,num):
 		count_pie +=1
 i+=1
 
+#prints up to 12 decimal places
 print ('%0.12f' % (4 * count_pie / i))
