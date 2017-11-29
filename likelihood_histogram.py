@@ -27,18 +27,19 @@ def eq_tau2(N):
 	x_val = numpy.linspace(0.1,.7,1000)
 	tau = []
 	for t in x_val:
-		y = (((N)/t)*N100) + N*(math.log(t)) - N - N*(math.log(N100))
+		y = (((N)/t)*N2) + N*(math.log(t)) - N - N*(math.log(N2))
 		tau.append(y)
 	tau_sum=numpy.mean(tau)
-	return tau, tau_sum
+	print (tau_sum)
+	return tau, tau_sum	
 
 histogram = []
 for j in range(0,100):
-	x_j, x_i = eq_tau2(100)
-	histogram.append(x_i)	
+	x_j, x_i = eq_tau2(2)
+	histogram.append(x_j)	
 
 plt.hist(histogram, facecolor = 'g')
-plt.title('Random Variables: 10')
+plt.title('N: 2')
 plt.grid(True)
 
 plt.show()
