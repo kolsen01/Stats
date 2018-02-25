@@ -1,4 +1,4 @@
-## Central Limit Theorem With Random Number Generator
+# Central Limit Theorem With Random Number Generator
 
-#### As N increases, the graph becomes to resemble a Gaussian. 
-	* Please see image to for N=100
+### About: 
+#### Exploring the Central Limit Theorem. As N increases, the graph becomes to resemble a Gaussian. Please see image for N=100 as an example.

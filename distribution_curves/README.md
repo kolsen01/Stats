@@ -1,5 +1,6 @@
-## Binomial v. Poisson v. Gaussian Distribution Graphs
+# Binomial v. Poisson v. Gaussian Distribution Graphs
 
+### About:
 #### Displays a comparison of distribution graphs for specific n and p values following a range of k = [0,5].
 
 ### Binomial Distribution: 
