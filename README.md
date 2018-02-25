@@ -8,4 +8,4 @@
 	* monte-carlo-method: exploring the Monte Carlo Method with rejection hypotheses
 	* chi-square: practice with the chi square test (still in progress). 
 	* likelihood: calculating and plotting with the maximum likelihood method
-	* equation_practice: 
+	* equation_practice: practice with plots, equations, deriving equations in statistics using python (independent and supplemental workspace).
